@@ -38,14 +38,7 @@ Main directions:
 - Agent Orchestration
 - External Memory
 
-Typical system architecture:
-```text
-LLM
-+ Tool
-+ Verifier
-+ Workflow
-+ Memory
-```
+Typical system architecture: LLM + Tool + Verifier + Workflow + Memory
 
 Core idea:
 - No longer relying purely on next-token prediction
@@ -71,12 +64,7 @@ Main directions:
 - Self-Critique
 - Policy Layers
 
-Core idea:
-```text
-AI Generation
-→ AI Self-Review
-→ AI Correction
-```
+Core idea: AI Generation → AI Self-Review → AI Correction
 
 Focus areas:
 | Technology | Purpose |
@@ -107,14 +95,8 @@ Representative projects:
 | AlphaProof | Mathematical proving |
 | Gemini Reasoning | Enhanced reasoning capabilities |
 
-Core idea:
-```text
-Neural Networks
-+
-Symbolic Reasoning
-+
-Search
-```
+Core idea: Neural Networks + Symbolic Reasoning + Search
+
 DeepMind is currently one of the strongest proponents of Neuro-Symbolic AI among major AI labs.
 ---
 
@@ -131,13 +113,8 @@ Core viewpoint:
 > Pure deep learning cannot achieve robust reasoning.
 
 Main proposal: Neuro-Symbolic AI
-```text
-Neural Network
-+
-Logic
-+
-Program
-```
+
+Neural Network + Logic + Program
 
 Focus areas:
 | Area | Description |
@@ -171,10 +148,7 @@ Main directions:
 - Retry mechanisms
 - Deterministic orchestration
 
-Core idea:
-```text
-Put the LLM inside a finite-state machine
-```
+Core idea: Put the LLM inside a finite-state machine
 
 LangGraph is essentially: Workflow + FSM (Finite State Machine)
 
@@ -194,12 +168,7 @@ Main directions:
 - Enterprise Reliability
 - Memory
 
-Microsoft’s approach:
-```text
-LLM
-+
-Enterprise System
-```
+Microsoft’s approach:LLM + Enterprise System
 
 Characteristics:
 - Enterprise-grade reliability
@@ -224,15 +193,8 @@ Functions:
 The industry increasingly recognizes that "LLM ≠ Complete AI System"
 
 As a result, the field is moving from a single large model toward:
-```text
-Model
-+ Tools
-+ Verifier
-+ Memory
-+ Planner
-+ Workflow
-+ Symbolic Layer
-```
+
+Model + Tools + Verifier + Memory + Planner + Workflow + Symbolic Layer
 
 This is often referred to as Compound AI Systems
 
@@ -240,38 +202,29 @@ This is often referred to as Compound AI Systems
 
 ### 5. Current Technical Split
 
----
-
 #### Path A: Continue Scaling
-
 Representatives:
-
 - OpenAI (partially)
 - Meta
 - xAI
 - DeepSeek (partially)
 
 Core belief:
-
 > Larger models + more data + more compute
 > will naturally yield stable reasoning capabilities.
 
 ---
 
 #### Path B: Neuro-Symbolic / System AI
-
 Representatives:
-
 - DeepMind
 - Anthropic (partially)
 - Many academic researchers
 
 Core belief:
-
 > Pure statistical generation will never be sufficiently stable.
 
 Therefore AI systems must incorporate:
-
 - Logic
 - Planning
 - Verification
@@ -280,7 +233,6 @@ Therefore AI systems must incorporate:
 ---
 
 ### 6. Current Leaders by Area
-
 | Area | Leading Organizations |
 |---|---|
 | Reasoning | OpenAI / DeepMind |
